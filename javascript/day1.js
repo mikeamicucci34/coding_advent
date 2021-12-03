@@ -1,4 +1,3 @@
-// increasing depth
 const fs = require('fs')
 const data = fs.readFileSync('../inputs/day1_mike.txt', {encoding: 'utf8', flag: 'r'})
 const array = data.split('\n').map(num => parseInt(num))
