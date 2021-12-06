@@ -37,7 +37,7 @@ function totalLanterns(array, days) {
     }
 
     for (let i = 0; i < array.length; i++) {
-       hash[array[i]] ? hash[array[i]] += 1 : hash[array[i]] = 1
+       hash[array[i]] += 1
     }
 
     for (let i = 0; i < days; i++) {
