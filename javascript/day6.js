@@ -4,20 +4,20 @@ const array = data.split(',').map(num => parseInt(num))
 
 // so slow...
 
-function lantern(array, days) {
-    for (let i = 0; i < days; i++) {
-       for (let j = 0; j < array.length; j++) {
-            if (array[j] === 0) {
-                array.push(9)
-                array[j] = 6
-            } else {
-                array[j] -= 1
-            }
-        } 
-    }
-    return array.length
+// function lantern(array, days) {
+//     for (let i = 0; i < days; i++) {
+//        for (let j = 0; j < array.length; j++) {
+//             if (array[j] === 0) {
+//                 array.push(9)
+//                 array[j] = 6
+//             } else {
+//                 array[j] -= 1
+//             }
+//         } 
+//     }
+//     return array.length
     
-}
+// }
 
 // more poo poo, but functional
 
