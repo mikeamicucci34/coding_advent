@@ -11,6 +11,9 @@ print(f"part one: {energy_usage}")
 def f(x_i: int, x_0: int) -> int:
     """Compute total cost of realignment.
 
+    Uses the arithmetic series sum formula:
+    1 + 2 + ... + n = (n^2 + n) / 2
+
     :param
         x_i: starting point
         x_0: ending point
