@@ -21,6 +21,7 @@ class Line:
 
     def points(self) -> Iterable[Tuple[int, int]]:
         """Yield all points on the line."""
+
         def delta(a: int, b: int) -> int:
             if a > b:
                 return -1
