@@ -8,7 +8,8 @@ with open("../day7_mike.txt", "r") as f:
 
     amount = [int(i) for i in amount]
 
-#Solution 1
+# Solution 1
+
 
 def gas(array):
     mid = statistics.median(array)
@@ -19,7 +20,9 @@ def gas(array):
 
     return gas_total
 
-#Solution 2
+
+# Solution 2
+
 
 def gas(array):
     gas_total = 0
@@ -28,7 +31,7 @@ def gas(array):
         curr_gas = 0
         for j in range(0, len(array)):
             triangle_num = abs(i - array[j])
-            curr_gas += (triangle_num * (triangle_num + 1))/2
+            curr_gas += (triangle_num * (triangle_num + 1)) / 2
         if curr_gas < gas_total or gas_total == 0:
             gas_total = curr_gas
 
