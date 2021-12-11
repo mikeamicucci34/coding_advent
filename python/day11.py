@@ -10,7 +10,8 @@ class Problem:
 
     grid: List[List[int]]
 
-    def _valid_neighbors(self, i: int, j: int, n: int) -> Iterable[Tuple[int, int]]:
+    @staticmethod
+    def _valid_neighbors(i: int, j: int, n: int) -> Iterable[Tuple[int, int]]:
         neighbors = [
             (i - 1, j - 1),
             (i - 1, j),
