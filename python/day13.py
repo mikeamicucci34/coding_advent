@@ -70,7 +70,7 @@ class Origami:
         solution = ["." * max_x] * max_y
         for x, y in folded:
             row = solution[y]
-            solution[y] = row[:x] + "#" + row[x + 1:]
+            solution[y] = row[:x] + "#" + row[x + 1 :]
 
         return "\n".join(solution)
 
